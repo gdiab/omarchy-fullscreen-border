@@ -1,0 +1,12 @@
+{
+  "schemaVersion": 1,
+  "id": "gdiab.fullscreen-border",
+  "name": "Fullscreen Border",
+  "version": "1.1.0",
+  "author": "Fullscreen Border contributors",
+  "license": "MIT",
+  "description": "A persistent, theme-aware border that distinguishes fullscreen and maximized windows. Automatically hides for the screensaver.",
+  "kinds": ["overlay"],
+  "keepLoaded": true,
+  "entryPoints": {"overlay": "Border.qml"}
+}
