@@ -139,7 +139,13 @@ lua tests/palette.test.lua
 Tests use temporary files and fake desktop commands; they do not modify your
 desktop or launch the screensaver. The runtime code was visually checked in
 normal, maximized, fullscreen and actual-screensaver states before packaging.
-The setup/removal path is tested in isolation; this package has not yet been
-installed on a second machine. See [CHANGELOG.md](CHANGELOG.md).
+On 2026-09-14, a fresh install from the public repository was also tested on
+the development laptop with the previous plugin and generated state set aside.
+Real setup loaded without Hyprland errors, enabled the overlay, and generated
+the current theme color. Repeated setup left the config unchanged; removal
+restored the exact baseline config and disabled the overlay; repeated removal
+and plugin-manager deletion also passed. The original installation was restored
+afterward. This package has not yet been installed on a second machine.
+See [CHANGELOG.md](CHANGELOG.md).
 
 MIT licensed. No network calls, telemetry, title logging, or background daemon.
